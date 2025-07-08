@@ -12,42 +12,36 @@ export default function City() {
     {
       id: "parfaiteiria-bel",
       title: "Get 10% discount with card",
-      tag: "Dessert · Exclusive",
       image: "/parfait.png",
       btn:"Dessert",
     },
     {
       id: "muji",
       title: "Get 10% discount with card",
-      tag: "Retail · Discount",
       image: "/muji.png",
       btn:"Retail",
     },
     {
       id: "shiseido",
       title: "Get 10% discount with card",
-      tag: "Beauty · Exclusive",
       image: "/shiseido.png",
       btn:"Beauty",
     },
     {
       id: "uniqlo",
       title: "Get 10% discount with card",
-      tag: "Retail · Limited Time",
       image: "/kose.png",
       btn:"Kose",
     },
     {
       id: "uniqlo",
       title: "Get 10% discount with card",
-      tag: "Retail · Limited Time",
       image: "/kose.png",
       btn:"Kose",
     },
     {
       id: "uniqlo",
       title: "Get 10% discount with card",
-      tag: "Retail · Limited Time",
       image: "/kose.png",
       btn:"Kose",
     },
@@ -87,8 +81,7 @@ export default function City() {
             <CategoryCard
               key={offer.id}
               id={offer.id}
-              title={offer.title}
-              tag={offer.tag}
+              title={offer.title}        
               image={offer.image}
               btn={offer.btn}
             />
