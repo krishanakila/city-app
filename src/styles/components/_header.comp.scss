@@ -23,6 +23,7 @@
   &__img{
     position: relative;
     z-index: 500;
+    visibility: hidden;
   }
   &__banner{
     position: absolute;
