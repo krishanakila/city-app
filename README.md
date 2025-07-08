@@ -8,7 +8,7 @@ This project was gencompleted using below technology.
 - https://tailwindcss.com/docs/installation/using-vite [Tailwindcss 4]  
 - https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/ [ITCSS File Architecture] 
 - https://en.bem.info/methodology/ [BEM Methodology]
-- https://www.shadcn-vue.com/  [Shadcn]
+- https://ui.shadcn.com/ [Shadcn]
 
 # My PC Version
 
