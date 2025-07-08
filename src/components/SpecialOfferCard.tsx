@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect  } from "react";
 import { Button } from "@/components/ui/button";
 
 interface Slide {
@@ -36,12 +36,22 @@ const slides: Slide[] = [
 export default function SpecialOfferCard() {
   const [activeSlide, setActiveSlide] = useState(0);
 
+
+
+  useEffect(() => {
+  const interval = setInterval(() => {
+    setActiveSlide((prev) => (prev + 1) % slides.length);
+  }, 2500); // change every 3 seconds
+
+  return () => clearInterval(interval); // cleanup on unmount
+}, []);
+
   return (
     <div className="relative">
       {/* Carousel */}
       <div className="overflow-hidden rounded-2xl shadow">
         <div
-          className="flex transition-transform duration-500 ease-in-out"
+          className="flex transition-transform duration-1000 ease-in-out"
           style={{ transform: `translateX(-${activeSlide * 100}%)` }}
         >
           {slides.map((slide) => (

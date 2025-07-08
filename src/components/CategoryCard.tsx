@@ -20,7 +20,7 @@ export default function CategoryCard({ id, title, image, btn }: CategoryCardProp
         alt={title}
         className="w-full h-40 object-cover"
       />
-      <div className="py-2">
+      <div className="p-2">
         <h4 className="typo-8-b">{title}</h4>
         <div className="flex items-center justify-start">
             <Button aria-label="Category name button"  type="button" className="primary-btn primary-btn--mini typo-8-b mt-2 mr-1 disabled">{btn}</Button>

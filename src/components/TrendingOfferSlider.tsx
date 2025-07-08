@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect  } from "react";
 import { useNavigate } from "react-router-dom";
 import { ChevronRight, Star } from "lucide-react";
 
@@ -14,15 +14,15 @@ image: "/trending/parfait.jpg",
 {
 id: "muji",
 title: "Muji",
-city: "Tokyo",
+city: "Osaka",
 rating: 4.5,
 reviews: 89,
 image: "/trending/muji.png",
 },
 {
-id: "kose",
+id: "uniqlo",
 title: "Kosé",
-city: "Tokyo",
+city: "Kyoto",
 rating: 4.8,
 reviews: 102,
 image: "/trending/kose.png",
@@ -33,11 +33,26 @@ export default function TrendingOfferSlider() {
 const [index, setIndex] = useState(0);
 const navigate = useNavigate();
 
+useEffect(() => {
+  const interval = setInterval(() => {
+    setIndex((prevIndex) => (prevIndex + 1) % offers.length);
+  }, 2500); // change every 4 seconds
+
+  return () => clearInterval(interval); 
+}, []);
+
+
+
 return (
 <div className="relative w-full">
 
 <div className="relative h-92 rounded-2xl overflow-hidden shadow-lg">
-<img src={offers[index].image} alt={offers[index].title} className="w-full h-full object-cover" />
+<img
+  src={offers[index].image}
+  alt={offers[index].title}
+  className="w-full h-full object-cover transition-all duration-1000 ease-in-out"
+/>
+
     
     <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent px-4 py-4 flex flex-col justify-end">
      

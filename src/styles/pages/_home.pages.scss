@@ -3,8 +3,8 @@
 @use '../settings/font.settings' as *;
 
 .main-wrapper {
- // max-width: 375px;
- // margin: 0 auto;
+ max-width: 375px;
+ margin: 0 auto;
   &__body{
     background-color: $color-white;
   }
