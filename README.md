@@ -55,7 +55,9 @@ The project is designed mobile-first. You can preview it directly from your desk
 - React 19 + TypeScript
 
 - Tailwind CSS 4 (mobile-first design)
-
+  
+- SCSS + ITCSS File Architecture + BEM Methodology (mobile-first design)
+   
 - React Router DOM
 
 - Vite (build tool)
