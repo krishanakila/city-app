@@ -4,12 +4,11 @@ import { Button } from "@/components/ui/button";
 interface CategoryCardProps {
   id: string;
   title: string;
-  tag: string;
   image?: string;
   btn: string;
 }
 
-export default function CategoryCard({ id, title, tag, image, btn }: CategoryCardProps) {
+export default function CategoryCard({ id, title, image, btn }: CategoryCardProps) {
   return (
     <Link
       to={`/offer/${id}`}
