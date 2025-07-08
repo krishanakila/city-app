@@ -43,7 +43,9 @@ https://www.figma.com/design/HmnvqM7PRh7gtqlCgM6iPw/UI-Front-end-Task?node-id=21
 
 ![image](https://user-images.githubusercontent.com/9035990/93186078-d40e1a00-f75b-11ea-9948-ec5050f83f98.png)
 
-# 3) TailwindCSS 4 - Ex:(Input feilds, card, button and dropdown)
+# 3) GitHub + Deployment on Production
+![image](https://github.com/user-attachments/assets/51920b8f-417b-4934-9c32-faef47716d45)
+
 
 👉 [Live Demo](https://extraordinary-mermaid-34facb.netlify.app)
 
