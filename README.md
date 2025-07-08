@@ -1,71 +1,50 @@
-# React + TypeScript + Vite
+# React + Vite + TailwindCSS 4 + BEM + SCSS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+# Assignment-krishan-ui [Pulse iD]
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project was gencompleted using below technology.
 
-## Expanding the ESLint configuration
+- https://tailwindcss.com/docs/installation/using-vite [Tailwindcss 4]  
+- https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/ [ITCSS File Architecture] 
+- https://en.bem.info/methodology/ [BEM Methodology]
+-https://www.shadcn-vue.com/  [Shadcn]
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+# My PC Version
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+$ node -v
+22.16.0
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+$ npm -v
+10.9.2
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+# To Run The Project
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+1) clone the repo 
+2) npm install
+3) npm run dev
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Development server
+Navigate to http://localhost:5173/. The app will automatically reload if you change any of the source files.
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-"# city-app" 
-# city-app
+# Figma link - Prototype 
+
+Design :
+https://www.figma.com/design/HmnvqM7PRh7gtqlCgM6iPw/UI-Front-end-Task?node-id=21-470&t=XMfHizJYun0ew63J-0
+
+# Best practices used for this project.
+
+# 1) Scss File Architecture Structure (ITCSS)
+   A curated list of awesome ITCSS articles, and resources.
+
+![image](https://user-images.githubusercontent.com/9035990/93185723-68c44800-f75b-11ea-9667-62d68f441426.png)
+
+# 2) CSS methodology - Blocks, Elements and Modifiers [BEM] 
+
+![image](https://user-images.githubusercontent.com/9035990/93186078-d40e1a00-f75b-11ea-9948-ec5050f83f98.png)
+
+# 3) TailwindCSS 4 - Ex:(Input feilds, card, button and dropdown)
+
+
+
+
