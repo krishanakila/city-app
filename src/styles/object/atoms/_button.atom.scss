@@ -1,0 +1,45 @@
+// All the atomic level code goes here. like: buttons, breadcrumb, input, chip
+@use '../../settings/color.settings' as *;
+@use '../../settings/font.settings' as *;
+
+.primary-btn{
+  background-color: $color-orange;
+  border-radius: 26px;
+  border: 1px solid $color-orange;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  transform: scale(1);
+  color: $color-white;
+  height: 32px;
+  font-size: $base-font--x-small;
+  font-weight: $base-font-weight--strong;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px 10px;
+
+  &--mini{
+    width: auto;
+    height: 20px;
+    color: $color-white;
+    padding: 2px 5px;
+    font-size: $base-font--x-mini;
+    font-weight: $base-font-weight--strong;
+  }
+   
+  &:hover{
+    border: 1px solid $color-rgba-10;
+    background-color: $color-rgba-10;
+    transform: scale(0.97);
+  } 
+ 
+}
+ .disabled{
+    border: 1px solid $color-orange-10;
+    background: rgba(255, 203, 127, 1);
+    color: rgba($color: #fff, $alpha: 0.5);
+    &:hover{
+      border: 1px solid $color-orange-10;
+      background: rgba(255, 203, 127, 1);
+    }
+  }

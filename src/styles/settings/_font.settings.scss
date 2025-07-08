@@ -1,0 +1,31 @@
+/* Font Sizes, Family and Weight Variables */
+
+
+// Global Typography Variables (REM converted)
+$base-font--x-mini:         0.5rem !default;   // 8px
+$base-font--x:              0.625rem !default; // 10px
+$base-font--x-small:        0.75rem !default;  // 12px
+$base-font--small:          0.875rem !default; // 14px
+$base-font--medium:         1rem !default;     // 16px
+$base-font--x-medium:       1.125rem !default; // 18px
+$base-font--large:          1.25rem !default;  // 20px
+$base-font--x-large:        1.375rem !default; // 22px
+$base-font--xx-large:       1.5rem !default;   // 24px
+$base-font--xxx-large:      1.625rem !default; // 26px
+$base-font-size--huge:      1.875rem !default; // 30px
+$base-font-size--x-huge:    2rem !default;     // 32px
+$base-font-size--xx-huge:   2.5rem !default;   // 40px
+$base-font-size--xxx-huge:  3.125rem !default; // 50px
+
+
+
+// Font Family Variables
+$font-family--primary:     "Poppins", sans-serif !default;
+
+
+// Font Weight Variables
+$base-font-weight--nutral:  300 !default;
+$base-font-weight--normal:  400 !default;
+$base-font-weight--strong:  500 !default;
+$base-font-weight--bold:    600 !default;
+$base-font-weight--semi-bold:  700 !default;

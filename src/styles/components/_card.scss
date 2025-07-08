@@ -1,0 +1,24 @@
+// Card code goes here.
+@use '../settings/color.settings' as *;
+@use '../settings/font.settings' as *;
+
+
+.card{
+    display: grid;
+    grid-template-columns: 148px auto;
+    box-shadow: 0 8px 16px rgba(255, 143, 0, 0.2);
+    &__title{
+       font-size: $base-font--medium;
+       font-weight: $base-font-weight--bold;
+       color: $color-orange;
+    }
+    &__sub-title{
+       font-size: $base-font--x-small;
+       color: $color-gray;
+       line-height: 1;
+       font-weight: $base-font-weight--nutral;
+    }
+    &__img{
+        width: 130px;
+    }
+}

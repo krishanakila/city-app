@@ -1,0 +1,49 @@
+/* Added Global Style Files Here and Import Other Style Files */
+
+
+// SETTINGS Global Files
+@use 'settings/color.settings' as *;
+@use 'settings/font.settings' as *;
+
+// TOOLS Global Files
+//@import "../scss/tools/mixins/browser-hacks.mixins";
+
+// GENERIC Global Files
+@use './generic/typography.generic' as *;
+
+// OBJECTS --atoms
+@use './object/atoms/rounded.atom' as *;
+@use './object/atoms/button.atom' as *;
+
+//COMPONENTS Global Files
+@use './components/header.comp' as *;
+@use './components/card' as *;
+
+//Pages Files
+@use './pages/home.pages' as *;
+@use './pages/city.pages' as *;
+
+// UTILITIES Global Files
+//@import '../scss/utilities/spacing.utils';
+
+body {
+  font-family: $font-family--primary;
+  font-weight: 100;
+  font-style: normal;
+}
+html {
+  font-size: 16px; /*base value 1rem = 16px */
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Custom utilities
+.text-title {
+  @apply text-xl font-semibold;
+}
+
+.offer-image {
+  @apply w-full h-28 object-cover;
+}

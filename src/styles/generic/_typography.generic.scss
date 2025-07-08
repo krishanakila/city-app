@@ -1,0 +1,58 @@
+// All the generic typo codes goes here.
+@use '../settings/color.settings' as *;
+@use '../settings/font.settings' as *;
+
+.typo-12{
+  font-size: $base-font--x-small;
+  font-weight: $base-font-weight--bold;
+  color: $color-orange;
+  font-family: $font-family--primary;
+}
+
+@mixin typo-8-b($weight: $base-font-weight--strong) {
+  font-size: $base-font--x-mini;
+  font-weight: $weight;
+  color: $color-primary;
+}
+
+@mixin typo-14-b($weight: $base-font-weight--bold) {
+  font-size: $base-font--small;
+  font-weight: $weight;
+  color: $color-primary;
+}
+
+@mixin typo-16-b($weight: $base-font-weight--bold) {
+  font-size: $base-font--medium;
+  font-weight: $weight;
+  color: $color-orange;
+}
+
+.typo-8-b {
+  @include typo-8-b();
+
+   &--bold {
+    @include typo-8-b($base-font-weight--bold);
+  }
+}
+
+
+.typo-14-b {
+  @include typo-14-b();
+
+   &--nutral {
+    @include typo-14-b($base-font-weight--nutral);
+  }
+
+  &--normal {
+    @include typo-14-b($base-font-weight--normal);
+  }
+}
+
+
+.typo-16-b {
+  @include typo-16-b();
+
+   &--bold {
+    @include typo-16-b($base-font-weight--bold);
+  }
+}

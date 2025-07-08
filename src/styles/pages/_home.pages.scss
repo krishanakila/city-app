@@ -1,0 +1,43 @@
+// Home page specific codes goes here.
+@use '../settings/color.settings' as *;
+@use '../settings/font.settings' as *;
+
+.main-wrapper {
+  max-width: 375px;
+  margin: 0 auto;
+  &__body{
+    background-color: $color-white;
+  }
+}
+
+.row-1 {
+  a:hover{
+    text-decoration: underline;
+  }
+}
+
+.row-2{
+  min-height: 105px;
+
+
+&::-webkit-scrollbar {
+  width: 6px;  
+  height: 6px; 
+}
+
+&::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 8px;
+}
+
+&::-webkit-scrollbar-thumb {
+  background-color: #e7e4e3;
+  border-radius: 8px;
+  border: 6px solid #e7e4e3; 
+}
+
+&::-webkit-scrollbar-thumb:hover {
+  background-color: #7c7a79;
+  cursor: pointer;
+}
+}

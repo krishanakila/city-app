@@ -1,0 +1,47 @@
+// All the atomic level code goes here. like: buttons, breadcrumb, input, chip
+@use '../../settings/color.settings' as *;
+@use '../../settings/font.settings' as *;
+
+.a-rounded {
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     border-radius: 50%;
+     background-color: $color-white;
+     border-color: $color-orange;
+     border-width: 2px;
+     padding: 3px;
+     width: 62px;
+     height: 62px;
+     transition: all 0.3s ease;
+     transform: scale(1);
+      &__img{
+        border-radius: 50%;
+        border-width: 0px;  
+        width: 62px;
+        height: 62px;
+      }
+      &:hover{
+        color: $color-orange;
+        font-weight: $base-font-weight--strong;
+        transform: scale(0.97);
+      }
+}
+
+
+.a-rounded-mini{
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-white;
+  border-radius: 50%;
+  
+  &__item{
+   font-size: 9px;
+   font-weight: 300;
+   color: red;
+  }
+  
+}

@@ -1,0 +1,45 @@
+// Header container code goes here.
+@use '../settings/color.settings' as *;
+@use '../settings/font.settings' as *;
+
+.mobile-header{
+  &__wrapper{
+  border-bottom-right-radius: 24px;
+  border-bottom-left-radius: 24px;
+ }
+  &__right{
+   text-align: right;
+  }
+  &__name{
+    color: $color-primary;
+    font-size: $base-font--x;
+    font-weight: $base-font-weight--normal;
+  }
+  &__txt{
+    color: $color-secondary;
+    font-size: $base-font--x;
+    font-weight: $base-font-weight--normal;
+  }
+  &__img{
+    position: relative;
+    z-index: 500;
+  }
+  &__banner{
+    position: absolute;
+    top: 0;
+    z-index: 400;
+    border-radius: 8px;
+  }
+  &__city-name{
+    z-index: 9999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $color-white;
+    position: absolute;
+    letter-spacing: 1px;;
+  }
+}
+
+
+
