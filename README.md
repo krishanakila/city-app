@@ -46,7 +46,7 @@ https://www.figma.com/design/HmnvqM7PRh7gtqlCgM6iPw/UI-Front-end-Task?node-id=21
 # 3) TailwindCSS 4 - Ex:(Input feilds, card, button and dropdown)
 
 🔗 Live Demo:
-👉 extraordinary-mermaid-34facb.netlify.app
+👉 [Live Demo](https://extraordinary-mermaid-34facb.netlify.app)
 
 📌 Viewing Note:
 The project is designed mobile-first. You can preview it directly from your desktop browser and I’ve set a max-width(375px) constraint to simulate mobile layout even on larger screens. It’s also responsive and works well on real mobile devices if you prefer testing that way.
