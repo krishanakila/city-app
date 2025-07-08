@@ -1,7 +1,7 @@
 # React + Vite + TailwindCSS 4 + BEM + SCSS
 
 
-# Assignment-krishan-ui [Pulse iD]
+# Assignment-krishan [Pulse iD - city-app]
 
 This project was gencompleted using below technology.
 
