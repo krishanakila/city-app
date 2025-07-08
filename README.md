@@ -45,7 +45,6 @@ https://www.figma.com/design/HmnvqM7PRh7gtqlCgM6iPw/UI-Front-end-Task?node-id=21
 
 # 3) TailwindCSS 4 - Ex:(Input feilds, card, button and dropdown)
 
-🔗 Live Demo:
 👉 [Live Demo](https://extraordinary-mermaid-34facb.netlify.app)
 
 📌 Viewing Note:
