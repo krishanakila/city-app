@@ -123,7 +123,7 @@ return (
           key={index}
           src={thumb}
           alt={`Thumbnail ${index + 1}`}
-          className={`w-14 h-14 rounded-lg object-cover border-2 ${
+          className={`w-14 h-14 rounded-lg object-cover border-2 cursor-pointer ${
             index === activeIndex
               ? "border-orange-500"
               : "border-transparent"
@@ -161,7 +161,7 @@ return (
     </p>
 
     {/* Pagination dots */}
-    <div className="flex justify-center mt-4 space-x-1">
+    <div className="flex justify-center mt-4 space-x-1 cursor-pointer">
       {[...Array(6)].map((_, i) => (
         <span
           key={i}
